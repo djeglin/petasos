@@ -16,3 +16,4 @@ const Petasos = {
 if (typeof window !== 'undefined' && window.Vue) window.Vue.use(Petasos)
 
 export default Petasos
+export const { log } = Petasos
