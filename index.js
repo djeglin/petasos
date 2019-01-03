@@ -5,7 +5,8 @@ const nonProd = env !== 'production' && env !== 'prod' && env !== 'live'
 
 const Petasos = {
   log: function () {
-    if (nonProd) console.log(Array.prototype.slice.call(arguments))
+    if (nonProd) return console.log(Array.prototype.slice.call(arguments))
+    else return
   },
 
   install (Vue, options) {
