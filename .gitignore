@@ -1,0 +1,5 @@
+# NPM cruft
+node_modules
+
+# OS specific junk
+**/.DS_STORE
