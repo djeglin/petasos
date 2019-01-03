@@ -1,11 +1,11 @@
 import chalk from 'chalk'
 
-const env = process.env.APPLICATION_ENV || process.env.NODE_ENV || 'dev'
+const env = process.env.APPLICATION_ENV || 'dev'
 const nonProd = env !== 'production' && env !== 'prod' && env !== 'live'
 
 const Petasos = {
   log: function () {
-    if (nonProd) return console.log(Array.prototype.slice.call(arguments))
+    if (nonProd) return console.log(...arguments)
     else return
   },
 
